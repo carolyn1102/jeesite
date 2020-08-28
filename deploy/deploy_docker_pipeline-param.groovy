@@ -23,7 +23,7 @@ pipeline {
         stage('设定配置文件'){
             steps{
                 sh '''
-                    . ~/.bash_profile         
+                    . /etc/profile         
                     
                     if [[ "${env}" == "prod" ]]; then
                         export mysql_ip=${mysql_prod_ip}

@@ -22,7 +22,7 @@ pipeline {
         stage('设定配置文件'){
             steps{
                 sh '''
-                    . ~/.bash_profile
+                    . /etc/profile
             
                     export os_type=`uname`
                     cd ${WORKSPACE}/web/bin/docker

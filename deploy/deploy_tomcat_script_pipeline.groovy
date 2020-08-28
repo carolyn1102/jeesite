@@ -5,7 +5,7 @@ node('master') {
 
     stage('maven编译打包') {
         sh '''
-            . ~/.bash_profile
+            . /etc/profile
             
             export pwd=`pwd`
             export os_type=`uname`
